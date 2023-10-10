@@ -4,7 +4,13 @@ pipeline{
         demoVar='TestVariable123'
     }
     stages{
-        stage ('testStage'){
+        stage ('build'){
+            steps{
+                script{
+                    deployDemo.test()
+                }
+            }
+        stage ('deploy'){
             steps{
                 script{
                     deployDemo.test()
