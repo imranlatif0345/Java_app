@@ -1,5 +1,3 @@
-@Library('My-Jenkins-SharedLibrary')_
-
 pipeline{
     agent any
     environment{
