@@ -1,17 +1,12 @@
 def tomcatServerUrl = "http://172.31.14.95"
 pipeline {
-  agent {
-    node {
-      label 'jenkins-slave'
-    }
-  }
-
+  agent any
   stages {
     //Use this code for inline pipeline script option
     /* stage('Code checkout') {
       steps {
         //download code from github
-        git 'https://github.com/ajitinamdar-tech/jenkins-cicd-java-maven-demo.git'
+        git 'https://github.com/imranlatif0345/Java_app.git'
       }
 
     }*/
