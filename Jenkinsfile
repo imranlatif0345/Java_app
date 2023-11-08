@@ -24,7 +24,6 @@ pipeline {
             credentialsId: 'tomcat-credentials')],
           war: 'target/*.war',
           contextPath: 'pipeline-app'
-
       }
     }
   }
