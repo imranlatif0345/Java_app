@@ -3,13 +3,13 @@ pipeline {
   agent any
   stages {
     //Use this code for inline pipeline script option
-    /* stage('Code checkout') {
+    stage('Code checkout') {
       steps {
         //download code from github
         git 'https://github.com/imranlatif0345/Java_app.git'
       }
 
-    }*/
+    }
     stage('Build') {
       steps {
         // Run the maven build
